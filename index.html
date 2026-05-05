@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kirey Login</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="login-page">
+      <section class="login-shell" aria-labelledby="login-title">
+        <div class="brand-panel">
+          <p class="eyebrow">Kirey</p>
+          <h1 id="login-title">Accesso area riservata</h1>
+          <p class="intro">Data Made Human</p>
+        </div>
+
+        <form class="login-form" id="login-form">
+          <img class="login-logo" src="./asset/Logo%20kirey.jpeg" alt="Logo Kirey" />
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="nome@azienda.it"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              placeholder="Password"
+              required
+            />
+          </div>
+
+          <div class="captcha-wrapper" id="recaptcha-container"></div>
+
+          <button class="primary-button" type="submit" id="submit-button">
+            Accedi
+          </button>
+
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="./src/app.js" defer></script>
+  </body>
+</html>
