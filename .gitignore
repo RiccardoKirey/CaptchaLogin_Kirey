@@ -1,0 +1,53 @@
+# ──────────────────────────────────────────────
+# .NET / ASP.NET Core
+# ──────────────────────────────────────────────
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.vscode/
+*.swp
+publish/
+*.nupkg
+*.snupkg
+**/Properties/launchSettings.json
+
+# User secrets (never commit secrets)
+**/appsettings.*.json
+!**/appsettings.json
+!**/appsettings.Development.json
+
+# ──────────────────────────────────────────────
+# Node / Frontend
+# ──────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.pnp
+.pnp.js
+.env
+.env.local
+.env.*.local
+
+# ──────────────────────────────────────────────
+# OS
+# ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ──────────────────────────────────────────────
+# IDE / Tools
+# ──────────────────────────────────────────────
+.idea/
+*.iml
+*.orig
+
+# ──────────────────────────────────────────────
+# Claude Code local settings
+# ──────────────────────────────────────────────
+.claude/settings.local.json

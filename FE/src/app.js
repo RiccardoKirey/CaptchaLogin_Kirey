@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://example-be.local/api";
+const API_BASE_URL = "http://localhost:5067/api";
 const LOGIN_ENDPOINT = "/auth/login";
 const SUCCESS_PAGE = "./success.html";
 const RECAPTCHA_SITE_KEY = "6LePJ9osAAAAAA5jZKoezO5ivFqyswiT3ehlcgi9";
@@ -100,6 +100,7 @@ form.addEventListener("submit", async (event) => {
     window.location.href = SUCCESS_PAGE;
   } catch (error) {
     setMessage(error.message, "error");
+    console.error("Errore durante il login:", error);
     resetCaptcha();
   } finally {
     submitButton.disabled = false;

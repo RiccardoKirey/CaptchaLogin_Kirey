@@ -1,6 +1,6 @@
 namespace validazioneCaptcha.Services;
 
-public class ReCaptchaService
+public class ReCaptchaService : IReCaptchaService
 {
     private readonly HttpClient _httpClient;
     private readonly IConfiguration _configuration;
